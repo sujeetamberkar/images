@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Calcuator</title>
+</head>
+<body>
+    <h1>Basic Arithmetric Opperation </h1>
+    <form method="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit">Submit</button>
+    </form>
+    {%if result%}
+        <h2>Result:{{result}}</h2>
+    {%endif%}
+</body>
+</html>
